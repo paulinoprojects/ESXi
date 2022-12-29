@@ -22,11 +22,12 @@
 - <b>VMNICs</b> are the physical adapters of the ESXi Host itself, can only be assigned to 
 
 
-#### DSwitch - Distributed Switch
+#### DSwitch - Distributed Switch General Info
 - Create and Manage DSwitch in vCenter.
-- We create distributed port groups to span many hosts and ensure identical configuration.
+- Provides scalabilitiy.
+- We create distributed switch, then ditrubuted port groups to span many hosts.
 - VMkernal ports and uplinks still need to be configured on an individual host.
 - Features & Benefits for DSwitch
   - Private VLANs: Hosts can be governored within the same subnets such as creating isolated community VLANs.
   - NIC Teaming / Load Based Teaming: Allows dynamic traffic load balancing to ensure efficent usage of bandwidth.  
-  - DEMO: Migrating VMs to A Distributed Switch
+  
